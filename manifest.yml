@@ -1,0 +1,10 @@
+---
+path: .
+memory: 64M
+instances: 2
+
+applications:
+ - name: webvr-test
+   buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+   path: ./
+   host: webvr-test
