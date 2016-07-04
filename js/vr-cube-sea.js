@@ -56,7 +56,7 @@ window.VRCubeSea = (function () {
         return;
       }
 
-      var size = 0.2;
+      var size = 0.5;
       // Bottom
       var idx = cubeVerts.length / 5.0;
       cubeIndices.push(idx, idx + 1, idx + 2);
@@ -118,13 +118,13 @@ window.VRCubeSea = (function () {
       cubeVerts.push(x - size, y + size, z + size, 0.0, 0.0);
     }
 
-    var gridSize = 10;
+    var gridSize = 3;
 
     // Build the cube sea
     for (var x = 0; x < gridSize; ++x) {
       for (var y = 0; y < gridSize; ++y) {
         for (var z = 0; z < gridSize; ++z) {
-          appendCube(x - (gridSize / 2), y - (gridSize / 2), z - (gridSize / 2));
+          appendCube(x, y, z);
         }
       }
     }
