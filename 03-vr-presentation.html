@@ -98,8 +98,11 @@ found in the LICENSE file.
         antialias: !VRSamplesUtil.isMobile()
       };
       var gl = webglCanvas.getContext("webgl", glAttribs);
+      // gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, true);
       gl.clearColor(0.1, 0.2, 0.3, 1.0);
       gl.enable(gl.DEPTH_TEST);
+      gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+      gl.enable ( gl.BLEND ) ;
       gl.enable(gl.CULL_FACE);
 
       var textureLoader = new WGLUTextureLoader(gl);
