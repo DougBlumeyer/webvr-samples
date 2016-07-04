@@ -1,0 +1,22 @@
+{
+  "name": "webvr-samples",
+  "version": "1.0.0",
+  "description": "Simple examples of using the WebVR API.",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DougBlumeyer/webvr-samples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DougBlumeyer/webvr-samples/issues"
+  },
+  "homepage": "https://github.com/DougBlumeyer/webvr-samples#readme"
+}
